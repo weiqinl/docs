@@ -7,16 +7,48 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
 </head>
 <body>
   <div id="app">loading...</div>
   <script>
+      const gitalk = new Gitalk({
+        clientID: 'Github Application Client ID',
+        clientSecret: 'Github Application Client Secret',
+        repo: 'https://github.com/weiqinl/docs/',
+        owner: 'liuwqGit',
+        admin: ['Github repo collaborators, only these guys can initialize github issues'],
+        // facebook-like distraction free mode
+        distractionFreeMode: false
+      })
+  </script>
+  <script>
     window.$docsify = {
       name: 'guid',
       repo: 'weiqinl',
-      loadSidebar: true
+      loadSidebar: true,
+      auto2top: true,
+      maxLevel: 2, // 最大的内容表级别
+      subMaxLevel: 3, // 在自定义边栏中添加目录（TOC)
+      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      search: {
+       paths: 'auto',
+       noData: '没有结果'
+      },
+      disqus: 'shortname'
+      // plugins: [
+      //   EditOnGithubPlugin.create('https://github.com/weiqinl/docs/tree/master/docs/')
+      // ]
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
+
+<script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify-edit-on-github/index.js"></script> -->
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script> -->
 </body>
 </html>
