@@ -9,14 +9,18 @@
     * [webapp](html/webapp.md)
 
 * JavaScript
-    * [编码规范](JS/code)
-    * [语言规范](JS/language)
+    * [编码规范](js/code)
+    * [语言规范](js/language)
 
 * CSS
-    * [code](CSS/zte_fd_guide_css)
-    * [note](CSS/note)
-    * [query](CSS/query)
-    * [reset](CSS/reset)
-    * [sass](CSS/sass)
-    * [webkit](CSS/webkit)
+    * [code](css/zte_fd_guide_css)
+    * [note](css/note)
+    * [query](css/query)
+    * [reset](css/reset)
+    * [sass](css/sass)
+    * [webkit](css/webkit)
+    
+* Vue 
+    * [Vue.js风格指南](https://cn.vuejs.org/v2/style-guide/)
+
 
